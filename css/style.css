@@ -152,4 +152,10 @@ a{
 .bootstrapForm{
   padding: 15px;
   border:solid 2px rgb(0, 0, 0, 0.5);
+  margin: 20px 0 ;
+  
+}
+
+header nav{
+  background-color: black;
 }
