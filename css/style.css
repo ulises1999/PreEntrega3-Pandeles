@@ -11,9 +11,6 @@ body{
   margin: 0;
 }
 
-.asidederecho{
-position: sticky;
-}
 .baner{
   height: 225px;
   width: auto;
@@ -23,8 +20,9 @@ position: sticky;
 }
 .Logoheader{
   height: 100px;
-  border: 2px solid black;
+  border: 1px solid white;
   display: block;
+  border-radius: 5%;
 }
 
 .fondo{
@@ -38,12 +36,6 @@ position: sticky;
 }
 
 .banerinferior img{
-  display: block;
-}
-.headerfondo{
-  margin-bottom: 0%;
-  border-bottom: 0cm;
-  padding: 0px;
   display: block;
 }
 
@@ -85,17 +77,9 @@ textarea{
 
 main{
   background-color: rgb(211, 92, 163);
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
-.titulopag{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.titulos{
-  align-self: center;
-}
 .tituloseccion{
   display: flex;
   flex-direction: column;
@@ -108,6 +92,7 @@ main{
 .bebidasCalientes{
   border: solid 2px black;
   border-radius: 2%;
+  padding-top: 20px;
 }
 .bebida{
 display: flex;
@@ -128,20 +113,15 @@ gap: 15px;
   margin-left: 300px;
   display: inline;
   padding-right: 300px;
+  border: soli 2px black;
 }
-.tipobebida{
-  position: fixed;
-}
+
 nav ul li{
   list-style: none;
  }
  
 a{
   text-decoration: none;
-}
-
-.asidederecho img{
-  position: static;
 }
 
 .contenedorFormulario{
@@ -153,9 +133,12 @@ a{
   padding: 15px;
   border:solid 2px rgb(0, 0, 0, 0.5);
   margin: 20px 0 ;
-  
+
 }
 
 header nav{
   background-color: black;
+}
+main ul li{
+  list-style: none;
 }
