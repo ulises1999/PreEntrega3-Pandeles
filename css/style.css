@@ -129,18 +129,13 @@ gap: 15px;
   display: inline;
   padding-right: 300px;
 }
-.nav{
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 .tipobebida{
   position: fixed;
 }
 nav ul li{
   list-style: none;
  }
+ 
 a{
   text-decoration: none;
 }
@@ -149,33 +144,12 @@ a{
   position: static;
 }
 
-.formContacto{ 
- padding: 25px 55px; 
- box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
- border-radius: 20px;
- border: solid 1px black;
- text-align: left;
- width: 350px;
- /* margin-left: 70dvh; */
- height: 100dvh;
- display: flex;
- flex-direction: column;
-}
-.formContacto textarea{
-  width:auto
-}
-.formContacto h1{ 
-  padding:10px 0;
-}
-
-.input-group{
-  display: flex;
-  flex-direction:column ;
-  gap: 15px;
-  padding: 10px 0;
-  height: 70dvh;
- }
- .contenedorFormulario{
+.contenedorFormulario{
   display: grid;
   justify-items: center;
+  height: 100dvh;
  }
+.bootstrapForm{
+  padding: 15px;
+  border:solid 2px rgb(0, 0, 0, 0.5);
+}
