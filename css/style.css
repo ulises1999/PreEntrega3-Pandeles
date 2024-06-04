@@ -91,6 +91,7 @@ textarea{
 
 main{
   background-color: rgb(211, 92, 163);
+  height: 100dvh;
 }
 
 .titulopag{
@@ -154,3 +155,34 @@ a{
 .asidederecho img{
   position: static;
 }
+
+.formContacto{ 
+ padding: 25px 55px; 
+ box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+ border-radius: 20px;
+ border: solid 1px black;
+ text-align: left;
+ width: 350px;
+ /* margin-left: 70dvh; */
+ height: 100dvh;
+ display: flex;
+ flex-direction: column;
+}
+.formContacto textarea{
+  width:auto
+}
+.formContacto h1{ 
+  padding:10px 0;
+}
+
+.input-group{
+  display: flex;
+  flex-direction:column ;
+  gap: 15px;
+  padding: 10px 0;
+  height: 70dvh;
+ }
+ .contenedorFormulario{
+  display: grid;
+  justify-items: center;
+ }
