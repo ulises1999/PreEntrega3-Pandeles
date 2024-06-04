@@ -27,12 +27,6 @@ position: sticky;
   display: block;
 }
 
-.claseBoton{
-  border: 2px solid black;;
-  display: block;
-  background-color: white;
-}
-
 .fondo{
   background-image: url(../assests/images/centro\ grande.jpg);
   background-position: center;
@@ -135,17 +129,16 @@ gap: 15px;
   display: inline;
   padding-right: 300px;
 }
-
-.navegador {
-  position: fixed;
-  width: 97px;
-  height: 206px;
-  background-color: rgb(255, 255, 255);
+.nav{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .tipobebida{
   position: fixed;
 }
- .navegador nav ul li{
+nav ul li{
   list-style: none;
  }
 a{
