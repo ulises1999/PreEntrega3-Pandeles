@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 body{
-  height: 1000px;
-  width: 1292px;
+  height: 100dvh;
+  width: auto;
   padding: 0;
   border: 0;
   margin: 0;
@@ -37,6 +37,8 @@ body{
 
 .banerinferior img{
   display: block;
+  min-width: 100dvh;
+  height: auto;
 }
 
 footer{
@@ -78,6 +80,7 @@ textarea{
 main{
   background-color: rgb(211, 92, 163);
   min-height: 100dvh;
+  padding: 20px 0;
 }
 
 .tituloseccion{
@@ -142,8 +145,18 @@ header nav{
 main ul li{
   list-style: none;
 }
-
+/* main ul li p {
+  margin bottom: 0;
+} */
 .nav-item{ align-content: center}
+
+iframe{
+  border-radius: 4%;
+}
+
+.bebida p{
+  align-content: center;
+}
 /* Media quieries dados por chatgpt  html contacto*/
 @media (max-width: 600px) {
   .nav {
@@ -175,7 +188,36 @@ main ul li{
   }
 }
 
+/* Estilos para tabletas (ancho entre 601px y 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .nav {
+      flex-direction: row;
+  }
 
+  .nav-item {
+      margin-right: 0.5em;
+  }
+
+  .baner {
+      width: 100%;
+      height: auto;
+  }
+
+  .contenedorFormulario {
+      padding: 1.5em;
+  }
+
+  footer {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .footerIzquierda,
+  .footerCentral,
+  .footerDerecha {
+      margin-bottom: 0;
+  }
+}
 
 /* Estilos para pantallas grandes (ancho mayor a 1024px) */
 @media (min-width: 1025px) {
