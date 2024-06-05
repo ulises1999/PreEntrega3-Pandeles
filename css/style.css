@@ -158,10 +158,11 @@ iframe{
   align-content: center;
 }
 /* Media quieries dados por chatgpt  html contacto*/
-@media (max-width: 600px) {
+@media (max-width: 740px) {
   .nav {
       flex-direction: column;
       text-align: center;
+      display: none;
   }
 
   .nav-item {
@@ -182,16 +183,21 @@ iframe{
   } */
 
   .footerIzquierda,
-  .footerCentral,
   .footerDerecha {
       margin-bottom: 1em;
   }
+  .footerCentral{
+    display: none;
+  }
+
 }
 
 /* Estilos para tabletas (ancho entre 601px y 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 741px) and (max-width: 1024px) {
   .nav {
       flex-direction: row;
+      justify-content: center;
+      
   }
 
   .nav-item {
@@ -209,13 +215,19 @@ iframe{
 
   footer {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
   }
 
   .footerIzquierda,
-  .footerCentral,
   .footerDerecha {
       margin-bottom: 0;
+  }
+  .footerCentral{
+    display: none;
+  }
+  .btn-group{
+    display: none;
   }
 }
 
@@ -223,6 +235,7 @@ iframe{
 @media (min-width: 1025px) {
   .nav {
       flex-direction: row;
+      flex-wrap: nowrap;
   }
 
   .nav-item {
@@ -248,4 +261,17 @@ iframe{
   .footerDerecha {
       margin-bottom: 0;
   }
+  .btn-group{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width:1024px){
+  footer{
+    flex-direction: column;
+  }
+  .footerCentral{
+    align-items: start;
+  }
+
 }
