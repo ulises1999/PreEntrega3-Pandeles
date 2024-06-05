@@ -142,3 +142,68 @@ header nav{
 main ul li{
   list-style: none;
 }
+
+.nav-item{ align-content: center}
+/* Media quieries dados por chatgpt  html contacto*/
+@media (max-width: 600px) {
+  .nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-item {
+      margin-bottom: 1em;
+  }
+
+  .baner {
+      width: 100%;
+      height: auto;
+  }
+
+  .contenedorFormulario {
+      padding: 1em;
+  }
+
+  /* footer {
+      flex-direction: column;
+  } */
+
+  .footerIzquierda,
+  .footerCentral,
+  .footerDerecha {
+      margin-bottom: 1em;
+  }
+}
+
+
+
+/* Estilos para pantallas grandes (ancho mayor a 1024px) */
+@media (min-width: 1025px) {
+  .nav {
+      flex-direction: row;
+  }
+
+  .nav-item {
+      margin-right: 1em;
+  }
+
+  .baner {
+      width: 100%;
+      height: auto;
+  }
+
+  .contenedorFormulario {
+      padding: 2em;
+  }
+
+  footer {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .footerIzquierda,
+  .footerCentral,
+  .footerDerecha {
+      margin-bottom: 0;
+  }
+}
