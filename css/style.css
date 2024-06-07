@@ -76,6 +76,9 @@ textarea{
 .footerIzquierda{
   order: 1;
 }
+.footerIzquierda ul li{
+  list-style: none;
+}
 
 main{
   background-image: url(../assests/images/background-2.jpg);
@@ -107,6 +110,7 @@ main{
   max-width: 800px;
   height: auto;
   margin: 10px 15px;
+  background-color: rgba(207, 118, 200, 0.346);
 }
 .contenedorMapas{
   border: solid 2px black;
@@ -154,9 +158,12 @@ a{
   border:solid 2px rgb(0, 0, 0, 0.5);
   margin: 20px 0 ;
   border-radius: 3%;
+  background-color: rgba(207, 118, 200, 0.346);
 
 }
-
+ label{
+  color:black;
+ }
 header nav{
   background-color: black;
 }
@@ -174,6 +181,9 @@ iframe{
 
 .bebida p{
   align-content: center;
+}
+p{
+  color: black;
 }
 /* Media quieries dados por chatgpt  html contacto*/
 @media (max-width: 740px) {
