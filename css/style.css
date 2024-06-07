@@ -115,7 +115,7 @@ main{
 .contenedorMapas{
   border: solid 2px black;
   border-radius: 3%;
-  background-color: rgba(255, 207, 215, 0.433);
+  background-color: rgba(207, 118, 200, 0.346);
 }
 .bebida{
 display: flex;
@@ -217,7 +217,12 @@ p{
   .footerCentral{
     display: none;
   }
-
+  .footerIzquierda ul li{
+    list-style: none;
+  }
+  .bootstrapForm{
+    background-color: rgba(207, 118, 200, 0.346);
+  }
 }
 
 /* Estilos para tabletas (ancho entre 601px y 1024px) */
@@ -257,6 +262,12 @@ p{
   .btn-group{
     display: none;
   }
+  .footerIzquierda ul li{
+    list-style: none;
+  }
+  .bootstrapForm{
+    background-color: rgba(207, 118, 200, 0.346);
+  }
 }
 
 /* Estilos para pantallas grandes (ancho mayor a 1024px) */
@@ -292,6 +303,12 @@ p{
   .btn-group{
     display: none;
   }
+  .footerIzquierda ul li{
+    list-style: none;
+  }
+  .bootstrapForm{
+    background-color: rgba(207, 118, 200, 0.346);
+  }
   
 }
 
@@ -302,5 +319,10 @@ p{
   .footerCentral{
     align-items: start;
   }
-
+  .footerIzquierda ul li{
+    list-style: none;
+  }
+  .bootstrapForm{
+    background-color: rgba(207, 118, 200, 0.346);
+  }
 }
