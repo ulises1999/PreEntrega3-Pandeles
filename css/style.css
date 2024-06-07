@@ -37,7 +37,10 @@ body{
 
 .banerinferior img{
   display:block;
-  min-width: 100dvh;
+
+}
+.imagenbanner{
+  max-width: 100%;
   height: auto;
 }
 
@@ -49,6 +52,7 @@ footer{
   justify-content: space-evenly;
   padding: 15px;
   border: solid 3px black;
+  background-color: rgb(146, 63, 139);
 }
 
 .footerDerecha{
@@ -206,9 +210,9 @@ p{
       padding: 1em;
   }
 
-  /* footer {
-      flex-direction: column;
-  } */
+  footer {
+      background-color: rgb(146, 63, 139);
+  }
 
   .footerIzquierda,
   .footerDerecha {
@@ -231,6 +235,9 @@ p{
       flex-direction: row;
       justify-content: center;
       
+  }
+  footer {
+    background-color: rgb(146, 63, 139);
   }
 
   .nav-item {
@@ -276,7 +283,6 @@ p{
       flex-direction: row;
       flex-wrap: nowrap;
   }
-
   .nav-item {
       margin-right: 1em;
   }
@@ -293,6 +299,7 @@ p{
   footer {
       flex-direction: row;
       justify-content: space-around;
+      background-color: rgb(146, 63, 139);
   }
 
   .footerIzquierda,
@@ -315,6 +322,7 @@ p{
 @media (min-width: 769px) and (max-width:1024px){
   footer{
     flex-direction: column;
+    background-color: rgb(146, 63, 139);
   }
   .footerCentral{
     align-items: start;
