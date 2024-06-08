@@ -82,10 +82,18 @@ textarea{
 .footerIzquierda{
   order: 1;
 }
+.icono{
+  width: 40px;
+  margin: 10px;
+}
 .footerIzquierda ul li{
   list-style: none;
-}
 
+}
+.footerIzquierda ul{
+  display: flex;
+  justify-content: left;
+}
 main{
   background-image: url(../assests/images/background-2.jpg);
   background-position: center;
