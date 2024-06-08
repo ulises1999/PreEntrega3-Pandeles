@@ -200,8 +200,7 @@ p,h2,h3,h1{
 }
 p{ 
   font-size: 150%;
-  font-style: bold
-  ;
+  font-style: bold;
 }
 
 @media (max-width: 740px) {
