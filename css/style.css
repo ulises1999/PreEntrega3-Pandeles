@@ -35,8 +35,10 @@ body{
 
 }
 
-.banerinferior img{
+.banerinferior
+{
   display:block;
+  width: 100%;
 
 }
 .imagenbanner{
@@ -174,9 +176,7 @@ header nav{
 main ul li{
   list-style: none;
 }
-/* main ul li p {
-  margin bottom: 0;
-} */
+
 .nav-item{ align-content: center}
 
 iframe{
@@ -186,10 +186,16 @@ iframe{
 .bebida p{
   align-content: center;
 }
-p{
+
+p,h2,h3,h1{
   color: black;
 }
-/* Media quieries dados por chatgpt  html contacto*/
+p{ 
+  font-size: 150%;
+  font-style: bold
+  ;
+}
+
 @media (max-width: 740px) {
   .nav {
       flex-direction: column;
@@ -229,7 +235,7 @@ p{
   }
 }
 
-/* Estilos para tabletas (ancho entre 601px y 1024px) */
+
 @media (min-width: 741px) and (max-width: 1024px) {
   .nav {
       flex-direction: row;
@@ -277,7 +283,7 @@ p{
   }
 }
 
-/* Estilos para pantallas grandes (ancho mayor a 1024px) */
+
 @media (min-width: 1025px) {
   .nav {
       flex-direction: row;
