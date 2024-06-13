@@ -76,11 +76,9 @@ body{
 .logoSlider{
   max-height: 150px;
 }
-  
-.banerinferior
-{
-  display:block;
-  width: 100%;
+.carousel-item div img{
+  max-height: 150px;
+  width: auto;
 }
 
 .granos{
@@ -89,18 +87,40 @@ body{
   justify-content: space-between;
   img{
     max-width: 300px;
+    border: solid 2px black;
+    border-radius: 3%;
   }
   h2{
     margin: 0;
   }
+  div{
+    background-color: rgba(207, 118, 200, 0.65);
+    border: solid 2px black;
+    border-radius: 3%;
+    padding: 5px;
+  }
 }
+.parrafoYlista {
+  p{
+    background-color: rgba(207, 118, 200,0.65);
+    border: solid 2px black;
+    border-radius: 3%;
+  }
+  ul{
+    background-color: rgba(207, 118, 200,0.65);
+    font-size: 100%;
+    color: black;
+    border: solid 2px black;
+    border-radius: 3%;
+  }
+}
+
 .contenedorGranos{
   background-color: rgba(207, 118, 200, 0.346);
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px
-  ;
+  gap: 20px;
 }
 .contenedorTabla{
   display: flex;
