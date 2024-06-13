@@ -40,59 +40,89 @@ body{
 }
 
 
-/* .carousel-inner{
+.carousel-inner{
   max-width: auto;
   background-color: rgba(207, 118, 200, 0.65);
   
 }
-#carouselExampleAutoplaying{
+#carouselExampleIndicators{
   min-width: 100%;
 }
-.slider1 {
-  display: flex;
-  justify-content: space-between;
-  p{
-    color: white;
-    margin-bottom: 0%;
-  }
-} */
-.slider-frame{
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  /* animation: slide 15s infinite alternate ease-in-out; */
-  background-color: rgba(207, 118, 200, 0.346);
-}
-.slider-frame ul{
-    display: flex;
-    width: 400%;
-    animation: slide 15s infinite alternate ease-in-out;
-}
 
-.slider-frame ul li{
-  list-style: none;
-  margin: 0 auto;
+.carousel-item div{
+  display:flex
 }
-.cajaslider{
-  display: flex;
-  width: 100%;
+.carousel-item div{
+  justify-content: space-around;
 }
-@keyframes slide {
-  0%{margin-left: 0%;}
-  25%{margin-left: 0%;}
-
-  35%{margin-left: -100%;}
-  60%{margin-left: -100%;}
-
-  70%{margin-left: -200%;}
-  95%{margin-left: -200%;}
+.precio {
+  background-color: black;
+  font-style: inherit;
+  color: white;
+  border-radius: 50%;
+  max-height: 50%;
+  margin: 0px;
+  align-self: center;
+  padding: 8px;
+}
+.masinfo{
+  padding:10px;
+  margin-top: 10px;
+  border-radius: 10%;
+  color: white;
+  background-color: black;
+  border: solid 1px white;
+}
+.logoSlider{
+  max-height: 150px;
 }
   
 .banerinferior
 {
   display:block;
   width: 100%;
+}
 
+.granos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  img{
+    max-width: 300px;
+  }
+  h2{
+    margin: 0;
+  }
+}
+.contenedorGranos{
+  background-color: rgba(207, 118, 200, 0.346);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+  ;
+}
+.contenedorTabla{
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  text-wrap: wrap;
+}
+th {
+  background-color: #f2f2f2;
+}
+.tabla{
+  background-color: rgb(247, 186, 236);
+  border-radius: 3%;
+  max-width: 100%;
 }
 .imagenbanner{
   max-width: 100%;
