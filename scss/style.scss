@@ -42,8 +42,16 @@
   
   .carousel-inner{
     max-width: auto;
-    background-color: rgba(207, 118, 200, 0.65);
-    
+    background-color: rgba(207, 118, 200, 0.65);  
+  }
+  .azul{
+    background-color: rgb(31, 80, 96);
+  }
+  .verde{
+    background-color: rgb(42, 86, 30);
+  }
+  .naranja{
+    background-color:rgb(243, 119, 34) ;
   }
   #carouselExampleIndicators{
     min-width: 100%;
