@@ -45,13 +45,15 @@
     background-color: rgba(207, 118, 200, 0.65);  
   }
   .azul{
-    background-color: rgb(31, 80, 96);
+    background:linear-gradient(to right, rgb(49, 112, 133), black);
+    
   }
   .verde{
-    background-color: rgb(42, 86, 30);
+    background:linear-gradient(to right,rgb(63, 119, 48), black) ;
+  
   }
   .naranja{
-    background-color:rgb(243, 119, 34) ;
+    background:linear-gradient(to right,rgb(248, 142, 3), black) 70% ;
   }
   #carouselExampleIndicators{
     min-width: 100%;
@@ -70,8 +72,10 @@
     border-radius: 50%;
     max-height: 50%;
     margin: 0px;
-    align-self: center;
+    display: inline;
+    align-self: start;
     padding: 8px;
+    transform: translate(-60px,10px) rotate(16deg);
   }
   .masinfo{
     padding:10px;
@@ -88,7 +92,15 @@
     max-height: 150px;
     width: auto;
   }
-  
+  .textoSlider{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    h2,p{
+      color: white
+    }
+  }
   .granos{
     display: flex;
     flex-wrap: wrap;
