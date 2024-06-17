@@ -41,7 +41,7 @@ body {
 }
 
 .carousel-inner {
-  max-width: auto;
+  min-width: auto;
   background-color: rgba(207, 118, 200, 0.65);
 }
 
@@ -54,19 +54,27 @@ body {
 }
 
 .naranja {
-  background: linear-gradient(to right, rgb(248, 142, 3), black) 70%;
+  background: linear-gradient(to right, rgb(248, 142, 3), black);
 }
 
 #carouselExampleIndicators {
-  min-width: 100%;
+  min-width: 100vw;
+}
+#carouselExampleIndicators .carousel-control-next, #carouselExampleIndicators .carousel-control-prev {
+  transform: translate(0, 100px);
+}
+
+.carousel-indicators {
+  transform: translate(0px, 13px);
 }
 
 .carousel-item div {
   display: flex;
-}
-
-.carousel-item div {
   justify-content: space-around;
+}
+.carousel-item div img {
+  max-height: 150px;
+  width: auto;
 }
 
 .precio {
@@ -93,11 +101,6 @@ body {
 
 .logoSlider {
   max-height: 150px;
-}
-
-.carousel-item div img {
-  max-height: 150px;
-  width: auto;
 }
 
 .textoSlider {
@@ -193,20 +196,17 @@ footer {
   border: solid 3px black;
   background-color: rgb(146, 63, 139);
 }
-
-.footerDerecha {
+footer .footerDerecha {
   order: 3;
 }
-
-.footerCentral {
+footer .footerCentral {
   order: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-
-textarea {
+footer textarea {
   width: 300px;
   height: 100px;
   resize: none;
@@ -215,23 +215,19 @@ textarea {
   margin-top: 15px;
   border: 2px solid black;
 }
-
-.footerIzquierda {
+footer .footerIzquierda {
   order: 1;
 }
-
-.icono {
-  width: 40px;
-  margin: 10px;
-}
-
-.footerIzquierda ul li {
-  list-style: none;
-}
-
-.footerIzquierda ul {
+footer .footerIzquierda ul {
   display: flex;
   justify-content: left;
+}
+footer .footerIzquierda ul li {
+  list-style: none;
+}
+footer .footerIzquierda ul li .icono {
+  width: 40px;
+  margin: 10px;
 }
 
 main {
@@ -262,6 +258,24 @@ main {
   margin: 10px 15px;
   background-color: rgba(207, 118, 200, 0.346);
 }
+.bebidasCalientes .tituloseccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bebidasCalientes .bebida {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 10px 20px 10px;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.bebidasCalientes .bebida img {
+  height: 200px;
+  border: solid 6px rgb(90, 12, 35);
+  border-radius: 2%;
+}
 
 .contenedorMapas {
   border: solid 2px black;
@@ -277,7 +291,6 @@ main {
   justify-content: space-evenly;
   gap: 15px;
 }
-
 .bebida img {
   height: 200px;
   border: solid 6px rgb(90, 12, 35);
@@ -351,6 +364,9 @@ p {
 }
 
 @media (max-width: 740px) {
+  .textoSlider {
+    display: none;
+  }
   .nav {
     flex-direction: column;
     text-align: center;
@@ -369,8 +385,7 @@ p {
   footer {
     background-color: rgb(146, 63, 139);
   }
-  .footerIzquierda,
-  .footerDerecha {
+  .footerIzquierda, .footerDerecha {
     margin-bottom: 1em;
   }
   .footerCentral {
@@ -406,14 +421,10 @@ p {
     justify-content: center;
     align-items: center;
   }
-  .footerIzquierda,
-  .footerDerecha {
+  .footerIzquierda, .footerDerecha {
     margin-bottom: 0;
   }
-  .footerCentral {
-    display: none;
-  }
-  .btn-group {
+  .footerCentral, .btn-group {
     display: none;
   }
   .footerIzquierda ul li {
@@ -443,9 +454,7 @@ p {
     justify-content: space-around;
     background-color: rgb(146, 63, 139);
   }
-  .footerIzquierda,
-  .footerCentral,
-  .footerDerecha {
+  .footerIzquierda, .footerCentral, .footerDerecha {
     margin-bottom: 0;
   }
   .btn-group {
