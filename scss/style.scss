@@ -38,7 +38,6 @@ header{
   
 }
 
-
 .fondo {
   background-image: url(../assests/images/centro\ grande.jpg);
   background-position: center;
@@ -65,8 +64,6 @@ main {
 }
 // fondos
 
-
-
 #carouselExampleIndicators {
   min-width: 100vw;
   .carousel-indicators {
@@ -82,7 +79,7 @@ main {
       div {
       display: flex;
       justify-content: space-around;
-      .precio {
+        .precio {
         background-color: black;
         font-style: inherit;
         color: white;
@@ -345,167 +342,174 @@ footer {
 }
 
 
-main ul li {
-  list-style: none;
-}
-
-p, h2, h3, h1 {
-  color: black;
-}
-
-p {
-  font-size: 150%;
-  font-style: bold;
-}
-
 @media (max-width: 740px) {
-  .textoSlider {
-    display: none;
+  header{
+    .baner{
+      width: 100%;
+      height: auto;
+    }
+    nav{
+      .nav {
+      flex-direction: column;
+      text-align: center;
+      display: none;
+      .nav-item {
+        margin-bottom: 1em;
+        }
+      }
+    }
   }
-
-  .nav {
-    flex-direction: column;
-    text-align: center;
-    display: none;
-  }
-
-  .nav-item {
-    margin-bottom: 1em;
-  }
-
-  .baner {
-    width: 100%;
-    height: auto;
-  }
+  #carouselExampleIndicators{
+    .carousel-inner{
+      .carousel-item{
+        div {
+          div{
+            .d-block{
+              max-width: 170px;
+              height: auto;
+            }
+          }
+          .textoSlider{
+            display: none; 
+          }
+          .logoSlider{
+            max-width: 115px;
+            height: auto;
+          }
+        }
+      }
+    } 
+  } 
 
   .contenedorFormulario {
-    padding: 1em;
+      padding: 1em;
   }
 
   footer {
-    background-color: rgb(146, 63, 139);
+      background-color: rgb(146, 63, 139);
+      .footerCentral{
+        display: none;
+      }
+      .footerIzquierda ul li{
+        list-style: none;
+      }
   }
 
-  .footerIzquierda, .footerDerecha {
-    margin-bottom: 1em;
-  }
-
-  .footerCentral {
-    display: none;
-  }
-
-  .footerIzquierda ul li {
-    list-style: none;
-  }
-
-  .bootstrapForm {
+  .bootstrapForm{
     background-color: rgba(207, 118, 200, 0.346);
   }
 }
-
 @media (min-width: 741px) and (max-width: 1024px) {
-  .nav {
-    flex-direction: row;
-    justify-content: center;
+  header{
+    .baner {
+      width: 100%;
+      height: auto;
+    }
+    nav{
+      .btn-group{
+        display: none;
+      }
+      .nav {
+        flex-direction: row;
+        justify-content: center;
+        .nav-item {
+          margin-right: 0.5em;
+        }
+      } 
+    }
   }
 
   footer {
     background-color: rgb(146, 63, 139);
-  }
-
-  .nav-item {
-    margin-right: 0.5em;
-  }
-
-  .baner {
-    width: 100%;
-    height: auto;
-  }
-
-  .contenedorFormulario {
-    padding: 1.5em;
-  }
-
-  footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-
-  .footerIzquierda, .footerDerecha {
-    margin-bottom: 0;
-  }
-
-  .footerCentral, .btn-group {
-    display: none;
-  }
-
-  .footerIzquierda ul li {
-    list-style: none;
-  }
-
-  .bootstrapForm {
-    background-color: rgba(207, 118, 200, 0.346);
-  }
-}
-
-@media (min-width: 1025px) {
-  .nav {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
-  .nav-item {
-    margin-right: 1em;
-  }
-
-  .baner {
-    width: 100%;
-    height: auto;
+    .footerCentral{
+      display: none;
+    }
+    .footerIzquierda ul li{
+      list-style: none;
+    }
   }
 
   .contenedorFormulario {
-    padding: 2em;
+      padding: 1.5em;
+      .bootstrapForm{
+        background-color: rgba(207, 118, 200, 0.346);
+      }
   }
-
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(146, 63, 139);
-  }
-
-  .footerIzquierda, .footerCentral, .footerDerecha {
-    margin-bottom: 0;
-  }
-
-  .btn-group {
-    display: none;
-  }
-
-  .footerIzquierda ul li {
-    list-style: none;
-  }
-
-  .bootstrapForm {
-    background-color: rgba(207, 118, 200, 0.346);
+  #carouselExampleIndicators{
+    .carousel-inner{
+      .carousel-item{
+        div {
+          .textoSlider{
+            display: none; 
+          }
+        }
+      }
+    } 
   }
 }
+@media (min-width: 1025px) {
+  header{
+    .baner {
+      width: 100%;
+      height: auto;
+    }
+    nav{
+      .btn-group{
+        display: none;
+      }
+      .nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .nav-item {
+          margin-right: 1em;
+      }
+    }
+    }
+  }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+  .contenedorFormulario {
+      padding: 2em;
+  }
+
   footer {
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: rgb(146, 63, 139);
+      .footerCentral{
+        margin-bottom: 0;
+      }
+      .footerDerecha{
+        margin-bottom: 0;
+      }
+      .footerIzquierda{
+        margin-bottom: 0;
+        ul li{
+          list-style: none;
+        }
+      }
+  }
+
+  .bootstrapForm{
+    background-color: rgba(207, 118, 200, 0.346);
+  }
+  
+}
+
+@media (min-width: 769px) and (max-width:1024px){
+  footer{
     flex-direction: column;
     background-color: rgb(146, 63, 139);
+    .footerCentral{
+      align-items: start;
+    }
+    .footerIzquierda ul li{
+      list-style: none;
+    }
   }
-
-  .footerCentral {
-    align-items: start;
-  }
-
-  .footerIzquierda ul li {
-    list-style: none;
-  }
-
-  .bootstrapForm {
+  .bootstrapForm{
     background-color: rgba(207, 118, 200, 0.346);
   }
 }
