@@ -1,0 +1,45 @@
+.textoSlider{
+    h2, p {
+        color: white;
+      }
+}
+.granos{
+    h2 {
+        margin: 0;
+      }
+    .parrafoYlista {
+        p {
+          background-color: $color-bg;
+          border: solid 2px black;
+          border-radius: 3%;
+        }
+      
+        ul {
+          background-color: $color-bg;
+          font-size: 100%;
+          color: black;
+          border: solid 2px black;
+          border-radius: 3%;
+        }
+    }
+}
+.bebidasCalientes{
+    .bebida{
+        p {
+            align-content: center;
+            background-color: $color-bg;
+            border: solid 1px rgb(70, 49, 68);
+            border-radius: 2%;
+          }
+    }
+}
+.contenedorMapas{
+    .bebida{
+        p {
+            align-content: center;
+            background-color: $color-bg;
+            border: solid 1px rgb(70, 49, 68);
+            border-radius: 2%;
+          }
+    }
+}

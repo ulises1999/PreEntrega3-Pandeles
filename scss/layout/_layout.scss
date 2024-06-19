@@ -1,0 +1,91 @@
+.contenedorGranos {
+    background-color: $color-bg-secondary;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    .granos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    
+      img {
+        max-width: 300px;
+        border: solid 2px black;
+        border-radius: 3%;
+      }
+    
+      div {
+        background-color: $color-bg;
+        border: solid 2px black;
+        border-radius: 3%;
+        padding: 5px;
+      }
+    }
+  
+    .contenedorTabla {
+      display: flex;
+      justify-content: center;
+    }
+    
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        text-wrap: wrap;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      .tabla {
+        background-color: rgb(247, 186, 236);
+        border-radius: 3%;
+        max-width: 100%;
+      }
+  }
+.contenedorMapas {
+    border: solid 2px black;
+    border-radius: 3%;
+    background-color: $color-bg-secondary;
+    .tituloSeccionMapa {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .bebida {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px 10px 20px 10px;
+      justify-content: space-evenly;
+      gap: 15px;
+  
+      iframe {
+        border-radius: 4%;
+      }
+    }
+  }
+.contenedorFormulario {
+    display: grid;
+    justify-items: center;
+    height: 100dvh;
+    .bootstrapForm {
+      padding: 15px;
+      border: solid 2px rgba(0, 0, 0, 0.5);
+      margin: 20px 0;
+      border-radius: 3%;
+      background-color: $color-bg-secondary;
+      label {
+        color: black;
+      }
+    }
+  }
+  

@@ -1,7 +1,139 @@
+@import "../node_modules/animate.css/animate.css";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.textoSlider h2, .textoSlider p {
+  color: white;
+}
+
+.granos h2 {
+  margin: 0;
+}
+.granos .parrafoYlista p {
+  background-color: rgba(207, 118, 200, 0.65);
+  border: solid 2px black;
+  border-radius: 3%;
+}
+.granos .parrafoYlista ul {
+  background-color: rgba(207, 118, 200, 0.65);
+  font-size: 100%;
+  color: black;
+  border: solid 2px black;
+  border-radius: 3%;
+}
+
+.bebidasCalientes .bebida p {
+  align-content: center;
+  background-color: rgba(207, 118, 200, 0.65);
+  border: solid 1px rgb(70, 49, 68);
+  border-radius: 2%;
+}
+
+.contenedorMapas .bebida p {
+  align-content: center;
+  background-color: rgba(207, 118, 200, 0.65);
+  border: solid 1px rgb(70, 49, 68);
+  border-radius: 2%;
+}
+
+.masinfo {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10%;
+  color: white;
+  background-color: black;
+  border: solid 1px white;
+}
+
+#carouselExampleIndicators .carousel-control-next, #carouselExampleIndicators .carousel-control-prev {
+  transform: translate(0, 100px);
+}
+
+.contenedorGranos {
+  background-color: rgba(207, 118, 200, 0.346);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contenedorGranos .granos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contenedorGranos .granos img {
+  max-width: 300px;
+  border: solid 2px black;
+  border-radius: 3%;
+}
+.contenedorGranos .granos div {
+  background-color: rgba(207, 118, 200, 0.65);
+  border: solid 2px black;
+  border-radius: 3%;
+  padding: 5px;
+}
+.contenedorGranos .contenedorTabla {
+  display: flex;
+  justify-content: center;
+}
+.contenedorGranos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contenedorGranos th, .contenedorGranos td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  text-wrap: wrap;
+}
+.contenedorGranos th {
+  background-color: #f2f2f2;
+}
+.contenedorGranos .tabla {
+  background-color: rgb(247, 186, 236);
+  border-radius: 3%;
+  max-width: 100%;
+}
+
+.contenedorMapas {
+  border: solid 2px black;
+  border-radius: 3%;
+  background-color: rgba(207, 118, 200, 0.346);
+}
+.contenedorMapas .tituloSeccionMapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorMapas .bebida {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 10px 20px 10px;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.contenedorMapas .bebida iframe {
+  border-radius: 4%;
+}
+
+.contenedorFormulario {
+  display: grid;
+  justify-items: center;
+  height: 100dvh;
+}
+.contenedorFormulario .bootstrapForm {
+  padding: 15px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+  border-radius: 3%;
+  background-color: rgba(207, 118, 200, 0.346);
+}
+.contenedorFormulario .bootstrapForm label {
+  color: black;
 }
 
 body {
@@ -60,15 +192,16 @@ main {
   flex-direction: column;
   align-items: center;
 }
+main .bienvenidos h1 {
+  font-size: 300px;
+  color: white;
+}
 
 #carouselExampleIndicators {
   min-width: 100vw;
 }
 #carouselExampleIndicators .carousel-indicators {
   transform: translate(0px, 13px);
-}
-#carouselExampleIndicators .carousel-control-next, #carouselExampleIndicators .carousel-control-prev {
-  transform: translate(0, 100px);
 }
 #carouselExampleIndicators .carousel-inner {
   min-width: auto;
@@ -99,9 +232,6 @@ main {
   align-items: start;
   justify-content: space-around;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider h2, #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider p {
-  color: white;
-}
 #carouselExampleIndicators .carousel-inner .carousel-item .azul {
   background: linear-gradient(to right, rgb(49, 112, 133), black);
 }
@@ -116,85 +246,14 @@ main {
   width: auto;
 }
 
-.masinfo {
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 10%;
-  color: white;
-  background-color: black;
-  border: solid 1px white;
-}
-
-.contenedorGranos {
-  background-color: rgba(207, 118, 200, 0.346);
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.contenedorGranos .granos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.contenedorGranos .granos img {
-  max-width: 300px;
-  border: solid 2px black;
-  border-radius: 3%;
-}
-.contenedorGranos .granos h2 {
-  margin: 0;
-}
-.contenedorGranos .granos div {
-  background-color: rgba(207, 118, 200, 0.65);
-  border: solid 2px black;
-  border-radius: 3%;
-  padding: 5px;
-}
-.contenedorGranos .parrafoYlista p {
-  background-color: rgba(207, 118, 200, 0.65);
-  border: solid 2px black;
-  border-radius: 3%;
-}
-.contenedorGranos .parrafoYlista ul {
-  background-color: rgba(207, 118, 200, 0.65);
-  font-size: 100%;
-  color: black;
-  border: solid 2px black;
-  border-radius: 3%;
-}
-.contenedorGranos .contenedorTabla {
-  display: flex;
-  justify-content: center;
-}
-.contenedorGranos table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.contenedorGranos th, .contenedorGranos td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-  text-wrap: wrap;
-}
-.contenedorGranos th {
-  background-color: #f2f2f2;
-}
-.contenedorGranos .tabla {
-  background-color: rgb(247, 186, 236);
-  border-radius: 3%;
-  max-width: 100%;
-}
-
 footer {
-  background-color: gray;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 15px;
   border: solid 3px black;
-  background-color: rgb(146, 63, 139);
+  background: linear-gradient(to bottom, rgb(107, 60, 107), rgb(248, 18, 248));
 }
 footer .footerDerecha {
   order: 3;
@@ -255,44 +314,10 @@ footer .footerIzquierda ul li .icono {
   justify-content: space-evenly;
   gap: 15px;
 }
-.bebidasCalientes .bebida p {
-  align-content: center;
-  background-color: rgba(207, 118, 200, 0.65);
-  border: solid 1px rgb(70, 49, 68);
-  border-radius: 2%;
-}
 .bebidasCalientes .bebida img {
   height: 200px;
   border: solid 6px rgb(90, 12, 35);
   border-radius: 2%;
-}
-
-.contenedorMapas {
-  border: solid 2px black;
-  border-radius: 3%;
-  background-color: rgba(207, 118, 200, 0.346);
-}
-.contenedorMapas .tituloSeccionMapa {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contenedorMapas .bebida {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 20px 10px 20px 10px;
-  justify-content: space-evenly;
-  gap: 15px;
-}
-.contenedorMapas .bebida p {
-  align-content: center;
-  background-color: rgba(207, 118, 200, 0.65);
-  border: solid 1px rgb(70, 49, 68);
-  border-radius: 2%;
-}
-.contenedorMapas .bebida iframe {
-  border-radius: 4%;
 }
 
 .contenedorFormulario {

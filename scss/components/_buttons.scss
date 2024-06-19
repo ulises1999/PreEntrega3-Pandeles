@@ -1,0 +1,13 @@
+.masinfo {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10%;
+    color: white;
+    background-color: black;
+    border: solid 1px white;
+  }
+#carouselExampleIndicators{
+    .carousel-control-next, .carousel-control-prev {
+        transform: translate(0, 100px);
+      }  
+}
