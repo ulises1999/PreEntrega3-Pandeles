@@ -136,14 +136,6 @@
   color: black;
 }
 
-body {
-  height: 100dvh;
-  width: auto;
-  padding: 0;
-  border: 0;
-  margin: 0;
-}
-
 header .baner {
   height: 225px;
   width: auto;
@@ -165,6 +157,60 @@ header nav ul li {
 }
 header nav .nav-item {
   align-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 15px;
+  border: solid 3px black;
+  background: linear-gradient(to bottom, rgb(107, 60, 107), rgb(248, 18, 248));
+}
+footer .footerDerecha {
+  order: 3;
+}
+footer .footerCentral {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+footer .footerCentral label {
+  color: black;
+}
+footer textarea {
+  width: 300px;
+  height: 100px;
+  resize: none;
+  padding-bottom: 10px;
+  display: inline;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+footer .footerIzquierda {
+  order: 1;
+}
+footer .footerIzquierda ul {
+  display: flex;
+  justify-content: left;
+}
+footer .footerIzquierda ul li {
+  list-style: none;
+}
+footer .footerIzquierda ul li .icono {
+  width: 40px;
+  margin: 10px;
+}
+
+body {
+  height: 100dvh;
+  width: auto;
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
 .fondo {
@@ -246,52 +292,6 @@ main .bienvenidos h1 {
   width: auto;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 15px;
-  border: solid 3px black;
-  background: linear-gradient(to bottom, rgb(107, 60, 107), rgb(248, 18, 248));
-}
-footer .footerDerecha {
-  order: 3;
-}
-footer .footerCentral {
-  order: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-footer .footerCentral label {
-  color: black;
-}
-footer textarea {
-  width: 300px;
-  height: 100px;
-  resize: none;
-  padding-bottom: 10px;
-  display: inline;
-  margin-top: 15px;
-  border: 2px solid black;
-}
-footer .footerIzquierda {
-  order: 1;
-}
-footer .footerIzquierda ul {
-  display: flex;
-  justify-content: left;
-}
-footer .footerIzquierda ul li {
-  list-style: none;
-}
-footer .footerIzquierda ul li .icono {
-  width: 40px;
-  margin: 10px;
-}
-
 .bebidasCalientes {
   border: solid 2px black;
   border-radius: 2%;
@@ -318,22 +318,6 @@ footer .footerIzquierda ul li .icono {
   height: 200px;
   border: solid 6px rgb(90, 12, 35);
   border-radius: 2%;
-}
-
-.contenedorFormulario {
-  display: grid;
-  justify-items: center;
-  height: 100dvh;
-}
-.contenedorFormulario .bootstrapForm {
-  padding: 15px;
-  border: solid 2px rgba(0, 0, 0, 0.5);
-  margin: 20px 0;
-  border-radius: 3%;
-  background-color: rgba(207, 118, 200, 0.346);
-}
-.contenedorFormulario .bootstrapForm label {
-  color: black;
 }
 
 @media (max-width: 740px) {

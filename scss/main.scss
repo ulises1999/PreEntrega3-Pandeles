@@ -13,32 +13,6 @@ body {
   border: 0;
   margin: 0;
 }
-header{
-  .baner {
-    height: 225px;
-    width: auto;
-    padding: 0px;
-    overflow: hidden;
-    display: block;
-  }
-  
-  .Logoheader {
-    height: 100px;
-    border: 1px solid white;
-    display: block;
-    border-radius: 5%;
-  }
-  nav {
-    background-color: black;
-    ul li {
-      list-style: none;
-    }
-    .nav-item {
-      align-content: center;
-    }
-  }
-  
-}
 
 .fondo {
   background-image: url(../assests/images/centro\ grande.jpg);
@@ -128,58 +102,6 @@ main {
   }
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 15px;
-  border: solid 3px black;
-  background: linear-gradient(to bottom,rgb(107, 60, 107),rgb(248, 18, 248));
-
-  .footerDerecha {
-    order: 3;
-  }
-
-  .footerCentral {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    label {
-      color: black;
-    }
-  }
-
-  textarea {
-    width: 300px;
-    height: 100px;
-    resize: none;
-    padding-bottom: 10px;
-    display: inline;
-    margin-top: 15px;
-    border: 2px solid black;
-  }
-
-  .footerIzquierda {
-    order: 1;
-
-    ul {
-      display: flex;
-      justify-content: left;
-
-      li {
-        list-style: none;
-
-        .icono {
-          width: 40px;
-          margin: 10px;
-        }
-      }
-    }
-  }
-}
 
 .bebidasCalientes {
   border: solid 2px black;
@@ -211,23 +133,6 @@ footer {
     }
   }
 }
-
-.contenedorFormulario {
-  display: grid;
-  justify-items: center;
-  height: 100dvh;
-  .bootstrapForm {
-    padding: 15px;
-    border: solid 2px rgba(0, 0, 0, 0.5);
-    margin: 20px 0;
-    border-radius: 3%;
-    background-color: $color-bg-secondary;
-    label {
-      color: black;
-    }
-  }
-}
-
 
 @media (max-width: 740px) {
   header{
