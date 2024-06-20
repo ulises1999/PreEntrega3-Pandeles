@@ -1,4 +1,4 @@
-@import "../node_modules/animate.css/animate.css";
+@import "../node_modules/animate.css/animate.min.css";
 * {
   padding: 0;
   margin: 0;
@@ -159,6 +159,14 @@ header nav .nav-item {
   align-content: center;
 }
 
+body {
+  height: 100dvh;
+  width: auto;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -203,14 +211,6 @@ footer .footerIzquierda ul li {
 footer .footerIzquierda ul li .icono {
   width: 40px;
   margin: 10px;
-}
-
-body {
-  height: 100dvh;
-  width: auto;
-  padding: 0;
-  border: 0;
-  margin: 0;
 }
 
 .fondo {
