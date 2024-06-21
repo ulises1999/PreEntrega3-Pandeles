@@ -7,21 +7,21 @@
     h2 {
         margin: 0;
       }
-    .parrafoYlista {
-        p {
-          background-color: $color-bg;
-          border: solid 2px black;
-          border-radius: 3%;
-        }
-      
-        ul {
-          background-color: $color-bg;
-          font-size: 100%;
-          color: black;
-          border: solid 2px black;
-          border-radius: 3%;
-        }
-    }
+}
+.parrafoYlista {
+  p {
+    background-color: $color-bg;
+    border: solid 2px black;
+    border-radius: 3%;
+  }
+
+  ul {
+    background-color: $color-bg;
+    font-size: 100%;
+    color: black;
+    border: solid 2px black;
+    border-radius: 3%;
+  }
 }
 .bebidasCalientes{
     .bebida{
@@ -42,4 +42,17 @@
             border-radius: 2%;
           }
     }
+}
+@media (max-width: 740px) {
+  #carouselExampleIndicators{
+    .carousel-inner{
+      .carousel-item{
+        div{
+        .textoSlider{
+          display: none !important; 
+        }
+      }
+      }
+    }
+  }
 }

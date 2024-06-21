@@ -12,12 +12,13 @@
 .granos h2 {
   margin: 0;
 }
-.granos .parrafoYlista p {
+
+.parrafoYlista p {
   background-color: rgba(207, 118, 200, 0.65);
   border: solid 2px black;
   border-radius: 3%;
 }
-.granos .parrafoYlista ul {
+.parrafoYlista ul {
   background-color: rgba(207, 118, 200, 0.65);
   font-size: 100%;
   color: black;
@@ -39,6 +40,11 @@
   border-radius: 2%;
 }
 
+@media (max-width: 740px) {
+  #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider {
+    display: none !important;
+  }
+}
 .masinfo {
   padding: 10px;
   margin-top: 10px;
@@ -337,9 +343,6 @@ main .bienvenidos h1 {
     max-width: 170px;
     height: auto;
   }
-  #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider {
-    display: none;
-  }
   #carouselExampleIndicators .carousel-inner .carousel-item div .logoSlider {
     max-width: 115px;
     height: auto;
@@ -392,9 +395,6 @@ main .bienvenidos h1 {
   }
   .contenedorFormulario .bootstrapForm {
     background-color: rgba(207, 118, 200, 0.346);
-  }
-  #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider {
-    display: none;
   }
 }
 @media (min-width: 1025px) {
