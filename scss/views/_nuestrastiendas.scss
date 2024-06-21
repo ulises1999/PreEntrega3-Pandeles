@@ -1,0 +1,50 @@
+.contenedorMapas {
+    border: solid 2px black;
+    border-radius: 3%;
+    background-color: $color-bg-secondary;
+    .tituloSeccionMapa {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .bebida {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px 10px 20px 10px;
+      justify-content: space-evenly;
+      gap: 15px;
+  
+      iframe {
+        border-radius: 4%;
+      }
+    }
+  }
+  .fondo {
+    background-image: url(../assests/images/centro\ grande.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center;
+  }
+
+  
+  .bebida {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 10px 20px 10px;
+    justify-content: space-evenly;
+    gap: 15px;
+  
+    img {
+      height: 200px;
+      border: solid 6px rgb(90, 12, 35);
+      border-radius: 2%;
+    }
+  }

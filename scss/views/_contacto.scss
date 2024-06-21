@@ -1,0 +1,27 @@
+.contenedorFormulario {
+    display: grid;
+    justify-items: center;
+    height: 100dvh;
+    .bootstrapForm {
+      padding: 15px;
+      border: solid 2px rgba(0, 0, 0, 0.5);
+      margin: 20px 0;
+      border-radius: 3%;
+      background-color: $color-bg-secondary;
+      label {
+        color: black;
+      }
+    }
+  }
+  .fondo {
+    background-image: url(../assests/images/centro\ grande.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center;
+  }

@@ -14,14 +14,6 @@
     border: solid 2px black;
     border-radius: 3%;
   }
-
-  ul {
-    background-color: $color-bg;
-    font-size: 100%;
-    color: black;
-    border: solid 2px black;
-    border-radius: 3%;
-  }
 }
 .bebidasCalientes{
     .bebida{
@@ -47,9 +39,9 @@
   #carouselExampleIndicators{
     .carousel-inner{
       .carousel-item{
-        div{
+        .azul, .naranja, .verde{
         .textoSlider{
-          display: none !important; 
+          display: none;
         }
       }
       }

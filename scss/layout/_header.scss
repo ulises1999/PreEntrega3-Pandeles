@@ -1,0 +1,29 @@
+header{
+    .baner {
+      height: 225px;
+      width: auto;
+      padding: 0px;
+      overflow: hidden;
+      display: block;
+    }
+    
+    .Logoheader {
+      height: 100px;
+      border: 1px solid white;
+      display: block;
+      border-radius: 5%;
+    }
+    nav {
+      background-color: black;
+      ul li {
+        list-style: none;
+        .nav-link:hover {
+          transform: scale(1.2);
+        }
+      }
+      .nav-item {
+        align-content: center;
+      }
+    }
+    
+  }

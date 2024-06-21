@@ -1,0 +1,73 @@
+.contenedorGranos {
+    background-color: $color-bg-secondary;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    .granos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    
+      img {
+        max-width: 300px;
+        border: solid 2px black;
+        border-radius: 3%;
+      }
+    
+      div {
+        background-color: $color-bg;
+        border: solid 2px black;
+        border-radius: 3%;
+        padding: 5px;
+      }
+    }
+  .parrafoYlista{
+    ul {
+      background-color: $color-bg;
+      font-size: 100%;
+      color: black;
+      border: solid 2px black;
+      border-radius: 3%;
+    }
+  }
+    .contenedorTabla {
+      display: flex;
+      justify-content: center;
+    }
+    
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        text-wrap: wrap;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      .tabla {
+        background-color: rgb(247, 186, 236);
+        border-radius: 3%;
+        max-width: 100%;
+      }
+  }
+  .fondo {
+    background-image: url(../assests/images/centro\ grande.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center;
+  }

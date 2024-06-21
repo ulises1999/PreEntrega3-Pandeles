@@ -1,7 +1,15 @@
-@import "../node_modules/animate.css/animate.min.css";
 @import "base/reset";
 @import "utilities/variables";
 @import "base/fonts";
 @import "base/typography";
 @import "components/buttons";
 @import "layout/layout";
+@import "layout/body";
+@import "layout/footer";
+@import "layout/header";
+@import "views/cafeteria";
+@import "views/contacto";
+@import "views/index";
+@import "views/nuestrastiendas";
+@import "views/nuestros_granos";
+@import "views/pasteleria";
