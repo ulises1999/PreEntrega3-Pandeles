@@ -133,17 +133,18 @@ header nav .nav-item {
   align-content: center;
 }
 
-.fondo {
-  background-image: url(../assests/images/centro\ grande.jpg);
+main {
+  background-image: url(../assests/images/background-2.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  width: auto;
-  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100dvh;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-content: center;
+  justify-content: start;
+  align-items: center;
 }
 
 .bebidasCalientes {
@@ -196,19 +197,6 @@ header nav .nav-item {
   background-color: rgba(207, 118, 200, 0.65);
 }
 
-.fondo {
-  background-image: url(../assests/images/centro\ grande.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: auto;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-content: center;
-}
-
 main {
   background-image: url(../assests/images/background-2.jpg);
   background-position: center;
@@ -222,8 +210,21 @@ main {
   justify-content: start;
   align-items: center;
 }
-main .animate__animated {
-  justify-self: start;
+
+.fondo {
+  background-image: url(../assests/images/centro-grande.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-content: center;
+}
+.fondo .animate__animated {
+  margin-bottom: auto;
   font-size: 50px;
   color: white;
 }
@@ -299,17 +300,18 @@ main .animate__animated {
   border-radius: 4%;
 }
 
-.fondo {
-  background-image: url(../assests/images/centro\ grande.jpg);
+main {
+  background-image: url(../assests/images/background-2.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  width: auto;
-  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100dvh;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-content: center;
+  justify-content: start;
+  align-items: center;
 }
 
 .bebida {
@@ -382,30 +384,32 @@ main .animate__animated {
   max-width: 100%;
 }
 
-.fondo {
-  background-image: url(../assests/images/centro\ grande.jpg);
+main {
+  background-image: url(../assests/images/background-2.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  width: auto;
-  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100dvh;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-content: center;
+  justify-content: start;
+  align-items: center;
 }
 
-.fondo {
-  background-image: url(../assests/images/centro\ grande.jpg);
+main {
+  background-image: url(../assests/images/background-2.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  width: auto;
-  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100dvh;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-content: center;
+  justify-content: start;
+  align-items: center;
 }
 
 .bebidasCalientes {

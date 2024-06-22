@@ -1,21 +1,20 @@
-main {
-    background-image: url(../assests/images/background-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100dvh;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    .animate__animated{
-        justify-self: start;
-        font-size: 50px;
-        color: white;
-    }
-  }
+.fondo {
+  background-image: url(../assests/images/centro-grande.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end ;
+  align-content: center;
+  .animate__animated{
+    margin-bottom: auto;
+    font-size: 50px;
+    color: white;
+}
+}
   #carouselExampleIndicators {
     min-width: 100vw;
     .carousel-indicators {
