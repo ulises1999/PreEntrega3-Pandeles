@@ -216,7 +216,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: auto;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -230,13 +230,14 @@ main {
 }
 
 #carouselExampleIndicators {
-  min-width: 100vw;
+  width: 100%;
+  overflow: hidden;
 }
 #carouselExampleIndicators .carousel-indicators {
   transform: translate(0px, 13px);
 }
 #carouselExampleIndicators .carousel-inner {
-  min-width: auto;
+  width: 100%;
   background-color: rgba(207, 118, 200, 0.65);
 }
 #carouselExampleIndicators .carousel-inner .carousel-item div {
