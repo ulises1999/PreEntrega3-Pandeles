@@ -5,27 +5,27 @@
     flex-direction: column;
     gap: 20px;
   
-    .granos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+  .granos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
-      img {
-        max-width: 300px;
-        border: solid 2px black;
-        border-radius: 3%;
-      }
-      img:hover {
-        transform: scale(1.1);
-      }
-    
-      div {
-        background-color: $color-bg;
-        border: solid 2px black;
-        border-radius: 3%;
-        padding: 5px;
-      }
+    img {
+      max-width: 300px;
+      border: solid 2px black;
+      border-radius: 3%;
     }
+    .cardGranos:hover {
+      transform: scale(1.01);
+    }
+    
+    .cardGranos {
+      background-color: $color-bg;
+      border: solid 2px black;
+      border-radius: 3%;
+      padding: 5px;
+    }
+  }
   .parrafoYlista{
     ul {
       background-color: $color-bg;
@@ -35,33 +35,33 @@
       border-radius: 3%;
     }
   }
-    .contenedorTabla {
-      display: flex;
-      justify-content: center;
-    }
-    
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      
-      th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: left;
-        text-wrap: wrap;
-      }
-      
-      th {
-        background-color: #f2f2f2;
-      }
-      
-      .tabla {
-        background-color: rgb(247, 186, 236);
-        border-radius: 3%;
-        max-width: 100%;
-      }
+  .contenedorTabla {
+    display: flex;
+    justify-content: center;
   }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+      
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+      text-wrap: wrap;
+    }
+      
+    th {
+      background-color: #f2f2f2;
+    }
+      
+  .tabla {
+    background-color: rgb(247, 186, 236);
+    border-radius: 3%;
+    max-width: 100%;
+  }
+}
 
   main {
     background-image: url(../assests/images/background-2.jpg);

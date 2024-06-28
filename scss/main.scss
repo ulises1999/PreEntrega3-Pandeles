@@ -2,7 +2,6 @@
 @import "utilities/variables";
 @import "base/fonts";
 @import "base/typography";
-@import "components/buttons";
 @import "layout/body";
 @import "layout/footer";
 @import "layout/header";
@@ -12,6 +11,7 @@
 @import "views/nuestrastiendas";
 @import "views/nuestros_granos";
 @import "views/pasteleria";
+@import "components/buttons";
 
 @media (max-width: 740px) {
   header{
