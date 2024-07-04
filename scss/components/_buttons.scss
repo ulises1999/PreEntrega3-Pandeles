@@ -5,6 +5,9 @@
     color: white;
     background-color: black;
     border: solid 1px white;
+    a{
+      text-decoration: none;
+    }
   }
 #carouselExampleIndicators{
     .carousel-control-next, .carousel-control-prev {

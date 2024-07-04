@@ -5,10 +5,13 @@ footer {
     justify-content: space-evenly;
     padding: 15px;
     border: solid 3px black;
-    background: linear-gradient(to bottom,rgb(107, 60, 107),rgb(248, 18, 248));
+    background: $background-footer;
   
     .footerDerecha {
       order: 3;
+      h3,p{
+        color: white;
+      }
     }
   
     .footerCentral {
@@ -18,10 +21,10 @@ footer {
       align-items: center;
       gap: 15px;
       label {
-        color: black;
+        color: white;
       }
     }
-  
+    
     textarea {
       width: 300px;
       height: 100px;
@@ -34,6 +37,9 @@ footer {
   
     .footerIzquierda {
       order: 1;
+      h3,p{
+        color: white;
+      }
   
       ul {
         display: flex;

@@ -16,14 +16,32 @@
   }
 }
 .bebidasCalientes{
+
     .bebida{
         p {
             align-content: center;
             background-color: $color-bg;
-            border: solid 1px rgb(70, 49, 68);
+            border: solid 1px black;
             border-radius: 2%;
+            color: white;
+            text-wrap: wrap;
+            font-size: 130%;
           }
     }
+}
+.pasteleria{
+  .comida{
+    p {
+      align-content: center;
+      background-color: $color-bg;
+      border: solid 1px black;
+      border-radius: 2%;
+      color: white;
+      text-wrap: wrap;
+      font-size: 130%;
+      padding: 0px 10px;
+    }
+  }
 }
 .contenedorMapas{
     .bebida{

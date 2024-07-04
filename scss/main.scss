@@ -53,7 +53,6 @@
 }
 
 footer {
-    background-color: rgb(146, 63, 139);
     .footerCentral{
       display: none;
     }
@@ -87,7 +86,6 @@ footer {
   }
 
   footer {
-    background-color: rgb(146, 63, 139);
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -133,7 +131,6 @@ footer {
   footer {
       flex-direction: row;
       justify-content: space-around;
-      background-color: rgb(146, 63, 139);
       .footerCentral{
         margin-bottom: 0;
       }
@@ -156,7 +153,7 @@ footer {
 @media (min-width: 769px) and (max-width:1024px){
   footer{
     flex-direction: column;
-    background-color: rgb(146, 63, 139);
+
     .footerCentral{
       align-items: start;
     }

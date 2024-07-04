@@ -13,21 +13,35 @@
 }
 
 .parrafoYlista p {
-  background-color: rgba(207, 118, 200, 0.65);
+  background-color: rgb(16, 68, 38);
   border: solid 2px black;
   border-radius: 3%;
 }
 
 .bebidasCalientes .bebida p {
   align-content: center;
-  background-color: rgba(207, 118, 200, 0.65);
-  border: solid 1px rgb(70, 49, 68);
+  background-color: rgb(16, 68, 38);
+  border: solid 1px black;
   border-radius: 2%;
+  color: white;
+  text-wrap: wrap;
+  font-size: 130%;
+}
+
+.pasteleria .comida p {
+  align-content: center;
+  background-color: rgb(16, 68, 38);
+  border: solid 1px black;
+  border-radius: 2%;
+  color: white;
+  text-wrap: wrap;
+  font-size: 130%;
+  padding: 0px 10px;
 }
 
 .contenedorMapas .bebida p {
   align-content: center;
-  background-color: rgba(207, 118, 200, 0.65);
+  background-color: rgb(16, 68, 38);
   border: solid 1px rgb(70, 49, 68);
   border-radius: 2%;
 }
@@ -52,10 +66,13 @@ footer {
   justify-content: space-evenly;
   padding: 15px;
   border: solid 3px black;
-  background: linear-gradient(to bottom, rgb(107, 60, 107), rgb(248, 18, 248));
+  background: #020e36;
 }
 footer .footerDerecha {
   order: 3;
+}
+footer .footerDerecha h3, footer .footerDerecha p {
+  color: white;
 }
 footer .footerCentral {
   order: 2;
@@ -65,7 +82,7 @@ footer .footerCentral {
   gap: 15px;
 }
 footer .footerCentral label {
-  color: black;
+  color: white;
 }
 footer textarea {
   width: 300px;
@@ -78,6 +95,9 @@ footer textarea {
 }
 footer .footerIzquierda {
   order: 1;
+}
+footer .footerIzquierda h3, footer .footerIzquierda p {
+  color: white;
 }
 footer .footerIzquierda ul {
   display: flex;
@@ -141,28 +161,43 @@ main {
   max-width: 800px;
   height: auto;
   margin: 10px 15px;
-  background-color: rgba(207, 118, 200, 0.346);
+  background-color: rgba(33, 128, 73, 0.712);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: auto, 1fr, 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr;
 }
 .bebidasCalientes .tituloseccion {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 .bebidasCalientes .bebida {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 20px 10px 20px 10px;
-  justify-content: space-evenly;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "img p";
+  padding: 20px;
   gap: 15px;
 }
-.bebidasCalientes .bebida img {
+.bebidasCalientes .bebida p {
+  display: p;
+  overflow-y: scroll;
+  scrollbar-color: rgba(33, 128, 73, 0.712);
   height: 200px;
-  border: solid 6px rgb(90, 12, 35);
+  margin: 0px;
+}
+.bebidasCalientes .bebida img {
+  display: img;
+  height: 200px;
   border-radius: 2%;
+  border: solid 4px black;
 }
 .bebidasCalientes .bebida img:hover {
   transform: scale(1.1);
+  box-shadow: 1px 3px 3px 1px black;
 }
 
 .contenedorFormulario {
@@ -175,13 +210,13 @@ main {
   border: solid 2px rgba(0, 0, 0, 0.5);
   margin: 20px 0;
   border-radius: 3%;
-  background-color: rgba(207, 118, 200, 0.346);
+  background-color: rgba(33, 128, 73, 0.712);
 }
 .contenedorFormulario .bootstrapForm label {
   color: black;
 }
 .contenedorFormulario .bootstrapForm .btn:hover {
-  background-color: rgba(207, 118, 200, 0.65);
+  background-color: rgb(16, 68, 38);
 }
 
 main {
@@ -268,7 +303,7 @@ main {
 .contenedorMapas {
   border: solid 2px black;
   border-radius: 3%;
-  background-color: rgba(207, 118, 200, 0.346);
+  background-color: rgba(33, 128, 73, 0.712);
 }
 .contenedorMapas .tituloSeccionMapa {
   display: flex;
@@ -309,14 +344,9 @@ main {
   justify-content: space-evenly;
   gap: 15px;
 }
-.bebida img {
-  height: 200px;
-  border: solid 6px rgb(90, 12, 35);
-  border-radius: 2%;
-}
 
 .contenedorGranos {
-  background-color: rgba(207, 118, 200, 0.346);
+  background-color: rgba(33, 128, 73, 0.712);
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
@@ -334,15 +364,16 @@ main {
 }
 .contenedorGranos .granos .cardGranos:hover {
   transform: scale(1.01);
+  box-shadow: 1px 3px 3px 1px black;
 }
 .contenedorGranos .granos .cardGranos {
-  background-color: rgba(207, 118, 200, 0.65);
+  background-color: rgb(16, 68, 38);
   border: solid 2px black;
   border-radius: 3%;
   padding: 5px;
 }
 .contenedorGranos .parrafoYlista ul {
-  background-color: rgba(207, 118, 200, 0.65);
+  background-color: rgb(16, 68, 38);
   font-size: 100%;
   color: black;
   border: solid 2px black;
@@ -393,41 +424,59 @@ main {
   background-attachment: fixed;
   min-height: 100dvh;
   padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
-.bebidasCalientes {
+.pasteleria {
   border: solid 2px black;
   border-radius: 2%;
   padding-top: 20px;
   max-width: 800px;
   height: auto;
   margin: 10px 15px;
-  background-color: rgba(207, 118, 200, 0.346);
+  background-color: rgba(33, 128, 73, 0.712);
+  display: grid;
+  grid-template-rows: 20%, 80%;
+  grid-template-columns: 1fr;
 }
-.bebidasCalientes .tituloseccion {
+.pasteleria .tituloseccion {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
-.bebidasCalientes .bebida {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 20px 10px 20px 10px;
-  justify-content: space-evenly;
+.pasteleria section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr;
+}
+.pasteleria section .comida {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "img p";
+  padding: 20px;
   gap: 15px;
 }
-.bebidasCalientes .bebida img {
+.pasteleria section .comida p {
+  display: p;
+  overflow-y: scroll;
   height: 200px;
-  border: solid 6px rgb(90, 12, 35);
-  border-radius: 2%;
+  margin: 0px;
 }
-.bebidasCalientes .bebida img:hover {
+.pasteleria section .comida img {
+  display: img;
+  height: 200px;
+  border-radius: 2%;
+  border: solid 4px black;
+}
+.pasteleria section .comida img:hover {
   transform: scale(1.1);
+  box-shadow: 1px 3px 3px 1px black;
 }
 
 .masinfo {
@@ -437,6 +486,9 @@ main {
   color: white;
   background-color: black;
   border: solid 1px white;
+}
+.masinfo a {
+  text-decoration: none;
 }
 
 #carouselExampleIndicators .carousel-control-next, #carouselExampleIndicators .carousel-control-prev {
@@ -467,9 +519,6 @@ main {
   .contenedorFormulario {
     padding: 1em;
   }
-  footer {
-    background-color: rgb(146, 63, 139);
-  }
   footer .footerCentral {
     display: none;
   }
@@ -496,7 +545,6 @@ main {
     margin-right: 0.5em;
   }
   footer {
-    background-color: rgb(146, 63, 139);
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -535,7 +583,6 @@ main {
   footer {
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(146, 63, 139);
   }
   footer .footerCentral {
     margin-bottom: 0;
@@ -556,7 +603,6 @@ main {
 @media (min-width: 769px) and (max-width: 1024px) {
   footer {
     flex-direction: column;
-    background-color: rgb(146, 63, 139);
   }
   footer .footerCentral {
     align-items: start;

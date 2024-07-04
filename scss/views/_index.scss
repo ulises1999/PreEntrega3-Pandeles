@@ -60,15 +60,15 @@
       }
 
       .azul {
-        background: linear-gradient(to right, rgb(49, 112, 133), black);
+        background: linear-gradient(to right, $color-slider-1, black);
       }
 
       .verde {
-        background: linear-gradient(to right, rgb(63, 119, 48), black);
+        background: linear-gradient(to right, $color-slider-2, black);
       }
 
       .naranja {
-        background: linear-gradient(to right, rgb(248, 142, 3), black);
+        background: linear-gradient(to right, $color-slider-3, black);
       }
 
       img {
