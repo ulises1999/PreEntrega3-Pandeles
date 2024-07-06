@@ -1,18 +1,38 @@
 .textoSlider{
     h2, p {
-        color: white;
+        color: $font-color-primary;
       }
 }
 .granos{
     h2 {
         margin: 0;
+        color: $font-color-primary;
       }
+    .cardGranos{
+      p{
+        color: $font-color-primary;
+        margin: 0;
+      }
+    }
 }
 .parrafoYlista {
   p {
     background-color: $color-bg;
     border: solid 2px black;
     border-radius: 3%;
+    color: $font-color-primary;
+    margin: 0;
+    padding: 10px;
+  }
+  ul{
+    margin: 0;
+    padding: 10px;
+  
+    li{
+      color: $font-color-primary;
+      padding: 10px;
+      list-style: none;
+    }
   }
 }
 .bebidasCalientes{
@@ -23,7 +43,7 @@
             background-color: $color-bg;
             border: solid 1px black;
             border-radius: 2%;
-            color: white;
+            color: $font-color-primary;
             text-wrap: wrap;
             font-size: 130%;
           }
@@ -36,7 +56,7 @@
       background-color: $color-bg;
       border: solid 1px black;
       border-radius: 2%;
-      color: white;
+      color: $font-color-primary;
       text-wrap: wrap;
       font-size: 130%;
       padding: 0px 10px;
@@ -44,25 +64,17 @@
   }
 }
 .contenedorMapas{
-    .bebida{
+  .tituloSeccionMapa {
+    color: $font-color-primary;
+  }  
+  .bebida{
         p {
             align-content: center;
             background-color: $color-bg;
             border: solid 1px rgb(70, 49, 68);
             border-radius: 2%;
+            color: $font-color-primary;
+            padding: 0px 15px;
           }
     }
-}
-@media (max-width: 740px) {
-  #carouselExampleIndicators{
-    .carousel-inner{
-      .carousel-item{
-        .azul, .naranja, .verde{
-        .textoSlider{
-          display: none;
-        }
-      }
-      }
-    }
-  }
 }

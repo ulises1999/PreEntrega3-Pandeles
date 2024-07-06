@@ -25,6 +25,7 @@
       border: solid 2px black;
       border-radius: 3%;
       padding: 5px;
+      margin: 10px;
     }
   }
   .parrafoYlista{
@@ -34,33 +35,28 @@
       color: black;
       border: solid 2px black;
       border-radius: 3%;
+      margin-top: 15px;
     }
   }
+
   .contenedorTabla {
     display: flex;
     justify-content: center;
-  }
-    
-    table {
+    .tabla {
+      background-color: rgb(247, 186, 236);
+      border-radius: 3%;
       width: 100%;
       border-collapse: collapse;
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        text-wrap: wrap;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
     }
-      
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-      text-wrap: wrap;
-    }
-      
-    th {
-      background-color: #f2f2f2;
-    }
-      
-  .tabla {
-    background-color: rgb(247, 186, 236);
-    border-radius: 3%;
-    max-width: 100%;
   }
 }
 

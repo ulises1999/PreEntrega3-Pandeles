@@ -10,12 +10,29 @@
 
 .granos h2 {
   margin: 0;
+  color: white;
+}
+.granos .cardGranos p {
+  color: white;
+  margin: 0;
 }
 
 .parrafoYlista p {
   background-color: rgb(16, 68, 38);
   border: solid 2px black;
   border-radius: 3%;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+.parrafoYlista ul {
+  margin: 0;
+  padding: 10px;
+}
+.parrafoYlista ul li {
+  color: white;
+  padding: 10px;
+  list-style: none;
 }
 
 .bebidasCalientes .bebida p {
@@ -39,18 +56,18 @@
   padding: 0px 10px;
 }
 
+.contenedorMapas .tituloSeccionMapa {
+  color: white;
+}
 .contenedorMapas .bebida p {
   align-content: center;
   background-color: rgb(16, 68, 38);
   border: solid 1px rgb(70, 49, 68);
   border-radius: 2%;
+  color: white;
+  padding: 0px 15px;
 }
 
-@media (max-width: 740px) {
-  #carouselExampleIndicators .carousel-inner .carousel-item .azul .textoSlider, #carouselExampleIndicators .carousel-inner .carousel-item .naranja .textoSlider, #carouselExampleIndicators .carousel-inner .carousel-item .verde .textoSlider {
-    display: none;
-  }
-}
 body {
   height: 100dvh;
   width: auto;
@@ -188,6 +205,7 @@ main {
   scrollbar-color: rgba(33, 128, 73, 0.712);
   height: 200px;
   margin: 0px;
+  padding: 0px 15px;
 }
 .bebidasCalientes .bebida img {
   display: img;
@@ -371,6 +389,7 @@ main {
   border: solid 2px black;
   border-radius: 3%;
   padding: 5px;
+  margin: 10px;
 }
 .contenedorGranos .parrafoYlista ul {
   background-color: rgb(16, 68, 38);
@@ -378,28 +397,26 @@ main {
   color: black;
   border: solid 2px black;
   border-radius: 3%;
+  margin-top: 15px;
 }
 .contenedorGranos .contenedorTabla {
   display: flex;
   justify-content: center;
 }
-.contenedorGranos table {
+.contenedorGranos .contenedorTabla .tabla {
+  background-color: rgb(247, 186, 236);
+  border-radius: 3%;
   width: 100%;
   border-collapse: collapse;
 }
-.contenedorGranos th, .contenedorGranos td {
+.contenedorGranos .contenedorTabla .tabla th, .contenedorGranos .contenedorTabla .tabla td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
   text-wrap: wrap;
 }
-.contenedorGranos th {
+.contenedorGranos .contenedorTabla .tabla th {
   background-color: #f2f2f2;
-}
-.contenedorGranos .tabla {
-  background-color: rgb(247, 186, 236);
-  border-radius: 3%;
-  max-width: 100%;
 }
 
 main {
@@ -516,8 +533,19 @@ main {
     max-width: 115px;
     height: auto;
   }
+  #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider {
+    display: none;
+  }
   .contenedorFormulario {
     padding: 1em;
+  }
+  .granos {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .granos .cardGranos {
+    display: block;
   }
   footer .footerCentral {
     display: none;

@@ -44,6 +44,9 @@
             max-width: 115px;
             height: auto;
           }
+          .textoSlider{
+            display: none;
+          }
         }
       }
     } 
@@ -51,7 +54,14 @@
   .contenedorFormulario {
     padding: 1em;
 }
-
+  .granos{
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    .cardGranos{
+      display: block;
+    }
+  }
 footer {
     .footerCentral{
       display: none;
