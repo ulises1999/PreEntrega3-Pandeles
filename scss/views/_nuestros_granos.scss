@@ -1,10 +1,13 @@
 .contenedorGranos {
     background-color: $color-bg-secondary;
-    padding: 20px 10px;
+    padding: 20px 5px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  
+    margin: 0 5px;
+    border-radius: 2%;
+    border: solid 2px black;
+
   .granos {
     display: flex;
     flex-wrap: wrap;
@@ -40,8 +43,7 @@
   }
 
   .contenedorTabla {
-    display: flex;
-    justify-content: center;
+    @include flex-row-center;
     .tabla {
       background-color: rgb(247, 186, 236);
       border-radius: 3%;
@@ -68,17 +70,12 @@
     background-attachment: fixed;
     min-height: 100dvh;
     padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    @include flex-column-start;
   }
 
   @media (max-width: 740px) {
   .granos{
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
+    @include flex-column-aligncenter;
     .cardGranos{
       display: block;
     }

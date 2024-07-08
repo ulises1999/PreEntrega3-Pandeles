@@ -1,6 +1,5 @@
 footer {
-    display: flex;
-    flex-direction: row;
+    @include flex-row-center;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 15px;
