@@ -73,3 +73,14 @@
     justify-content: start;
     align-items: center;
   }
+
+  @media (max-width: 740px) {
+  .granos{
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    .cardGranos{
+      display: block;
+    }
+  }
+}

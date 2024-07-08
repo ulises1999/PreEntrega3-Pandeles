@@ -9,10 +9,16 @@
       border-radius: 3%;
       background-color: $color-bg-secondary;
       label {
-        color: black;
+        color: white;
       }
       .btn:hover {
         background-color: $color-bg;
+      }
+      h1{
+        color: white;
+      }
+      .form-text{
+        color: white;
       }
     }
     
@@ -30,3 +36,34 @@
     justify-content: start;
     align-items: center;
   }
+@media (max-width: 740px) {
+  .contenedorFormulario {
+    padding: 1em;
+    height: auto;
+  }
+    .bootstrapForm{
+      background-color: $color-bg-secondary;
+  }
+}
+@media (min-width: 741px) and (max-width: 1024px) {
+  .contenedorFormulario {
+      padding: 1.5em;
+      .bootstrapForm{
+        background-color: $color-bg-secondary;
+      }
+  }
+}
+
+@media (min-width: 1025px) {
+  .contenedorFormulario {
+      padding: 2em;
+  }
+  .bootstrapForm{
+    background-color: $color-bg-secondary;
+  } 
+}
+@media (min-width: 769px) and (max-width:1024px){
+  .bootstrapForm{
+    background-color: $color-bg-secondary;
+  }
+}

@@ -131,6 +131,56 @@ footer .footerIzquierda ul li .icono:hover {
   transform: scale(1.2);
 }
 
+@media (max-width: 740px) {
+  footer .footerCentral {
+    display: none;
+  }
+  footer .footerIzquierda ul li {
+    list-style: none;
+  }
+}
+@media (min-width: 741px) and (max-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerCentral {
+    display: none;
+  }
+  footer .footerIzquierda ul li {
+    list-style: none;
+  }
+}
+@media (min-width: 1025px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .footerCentral {
+    margin-bottom: 0;
+  }
+  footer .footerDerecha {
+    margin-bottom: 0;
+  }
+  footer .footerIzquierda {
+    margin-bottom: 0;
+  }
+  footer .footerIzquierda ul li {
+    list-style: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .footerCentral {
+    align-items: start;
+  }
+  footer .footerIzquierda ul li {
+    list-style: none;
+  }
+}
 header .baner {
   height: 225px;
   width: auto;
@@ -157,6 +207,52 @@ header nav .nav-item {
   align-content: center;
 }
 
+@media (max-width: 740px) {
+  header .baner {
+    width: 100%;
+    height: auto;
+  }
+  header nav .nav {
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+  header nav .nav .nav-item {
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 741px) and (max-width: 1024px) {
+  header .baner {
+    width: 100%;
+    height: auto;
+  }
+  header nav .btn-group {
+    display: none;
+  }
+  header nav .nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  header nav .nav .nav-item {
+    margin-right: 0.5em;
+  }
+}
+@media (min-width: 1025px) {
+  header .baner {
+    width: 100%;
+    height: auto;
+  }
+  header nav .btn-group {
+    display: none;
+  }
+  header nav .nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  header nav .nav .nav-item {
+    margin-right: 1em;
+  }
+}
 main {
   background-image: url(../assests/images/background-2.jpg);
   background-position: center;
@@ -200,15 +296,15 @@ main {
   gap: 15px;
 }
 .bebidasCalientes .bebida p {
-  display: p;
-  overflow-y: scroll;
+  grid-area: p;
+  overflow-y: auto;
   scrollbar-color: rgba(33, 128, 73, 0.712);
   height: 200px;
   margin: 0px;
   padding: 0px 15px;
 }
 .bebidasCalientes .bebida img {
-  display: img;
+  grid-area: img;
   height: 200px;
   border-radius: 2%;
   border: solid 4px black;
@@ -231,10 +327,16 @@ main {
   background-color: rgba(33, 128, 73, 0.712);
 }
 .contenedorFormulario .bootstrapForm label {
-  color: black;
+  color: white;
 }
 .contenedorFormulario .bootstrapForm .btn:hover {
   background-color: rgb(16, 68, 38);
+}
+.contenedorFormulario .bootstrapForm h1 {
+  color: white;
+}
+.contenedorFormulario .bootstrapForm .form-text {
+  color: white;
 }
 
 main {
@@ -251,6 +353,36 @@ main {
   align-items: center;
 }
 
+@media (max-width: 740px) {
+  .contenedorFormulario {
+    padding: 1em;
+    height: auto;
+  }
+  .bootstrapForm {
+    background-color: rgba(33, 128, 73, 0.712);
+  }
+}
+@media (min-width: 741px) and (max-width: 1024px) {
+  .contenedorFormulario {
+    padding: 1.5em;
+  }
+  .contenedorFormulario .bootstrapForm {
+    background-color: rgba(33, 128, 73, 0.712);
+  }
+}
+@media (min-width: 1025px) {
+  .contenedorFormulario {
+    padding: 2em;
+  }
+  .bootstrapForm {
+    background-color: rgba(33, 128, 73, 0.712);
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bootstrapForm {
+    background-color: rgba(33, 128, 73, 0.712);
+  }
+}
 .fondo {
   background-image: url(../assests/images/centro-grande.jpg);
   background-position: center;
@@ -318,6 +450,19 @@ main {
   width: auto;
 }
 
+@media (max-width: 740px) {
+  #carouselExampleIndicators .carousel-inner .carousel-item div div .d-block {
+    max-width: 170px;
+    height: auto;
+  }
+  #carouselExampleIndicators .carousel-inner .carousel-item div .logoSlider {
+    max-width: 115px;
+    height: auto;
+  }
+  #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider {
+    display: none;
+  }
+}
 .contenedorMapas {
   border: solid 2px black;
   border-radius: 3%;
@@ -328,7 +473,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.contenedorMapas .bebida {
+.contenedorMapas .mapas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -336,8 +481,12 @@ main {
   justify-content: space-evenly;
   gap: 15px;
 }
-.contenedorMapas .bebida iframe {
+.contenedorMapas .mapas iframe {
   border-radius: 4%;
+}
+.contenedorMapas .mapas p {
+  color: white;
+  align-self: center;
 }
 
 main {
@@ -352,15 +501,6 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-}
-
-.bebida {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 20px 10px 20px 10px;
-  justify-content: space-evenly;
-  gap: 15px;
 }
 
 .contenedorGranos {
@@ -433,6 +573,16 @@ main {
   align-items: center;
 }
 
+@media (max-width: 740px) {
+  .granos {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .granos .cardGranos {
+    display: block;
+  }
+}
 main {
   background-image: url(../assests/images/background-2.jpg);
   background-position: center;
@@ -480,8 +630,7 @@ main {
   gap: 15px;
 }
 .pasteleria section .comida p {
-  display: p;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 200px;
   margin: 0px;
 }
@@ -510,137 +659,6 @@ main {
 
 #carouselExampleIndicators .carousel-control-next, #carouselExampleIndicators .carousel-control-prev {
   transform: translate(0, 100px);
-}
-
-@media (max-width: 740px) {
-  header .baner {
-    width: 100%;
-    height: auto;
-  }
-  header nav .nav {
-    flex-direction: column;
-    text-align: center;
-    display: none;
-  }
-  header nav .nav .nav-item {
-    margin-bottom: 1em;
-  }
-  #carouselExampleIndicators .carousel-inner .carousel-item div div .d-block {
-    max-width: 170px;
-    height: auto;
-  }
-  #carouselExampleIndicators .carousel-inner .carousel-item div .logoSlider {
-    max-width: 115px;
-    height: auto;
-  }
-  #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider {
-    display: none;
-  }
-  .contenedorFormulario {
-    padding: 1em;
-  }
-  .granos {
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-  }
-  .granos .cardGranos {
-    display: block;
-  }
-  footer .footerCentral {
-    display: none;
-  }
-  footer .footerIzquierda ul li {
-    list-style: none;
-  }
-  .bootstrapForm {
-    background-color: rgba(207, 118, 200, 0.346);
-  }
-}
-@media (min-width: 741px) and (max-width: 1024px) {
-  header .baner {
-    width: 100%;
-    height: auto;
-  }
-  header nav .btn-group {
-    display: none;
-  }
-  header nav .nav {
-    flex-direction: row;
-    justify-content: center;
-  }
-  header nav .nav .nav-item {
-    margin-right: 0.5em;
-  }
-  footer {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footerCentral {
-    display: none;
-  }
-  footer .footerIzquierda ul li {
-    list-style: none;
-  }
-  .contenedorFormulario {
-    padding: 1.5em;
-  }
-  .contenedorFormulario .bootstrapForm {
-    background-color: rgba(207, 118, 200, 0.346);
-  }
-}
-@media (min-width: 1025px) {
-  header .baner {
-    width: 100%;
-    height: auto;
-  }
-  header nav .btn-group {
-    display: none;
-  }
-  header nav .nav {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  header nav .nav .nav-item {
-    margin-right: 1em;
-  }
-  .contenedorFormulario {
-    padding: 2em;
-  }
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  footer .footerCentral {
-    margin-bottom: 0;
-  }
-  footer .footerDerecha {
-    margin-bottom: 0;
-  }
-  footer .footerIzquierda {
-    margin-bottom: 0;
-  }
-  footer .footerIzquierda ul li {
-    list-style: none;
-  }
-  .bootstrapForm {
-    background-color: rgba(207, 118, 200, 0.346);
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  footer {
-    flex-direction: column;
-  }
-  footer .footerCentral {
-    align-items: start;
-  }
-  footer .footerIzquierda ul li {
-    list-style: none;
-  }
-  .bootstrapForm {
-    background-color: rgba(207, 118, 200, 0.346);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

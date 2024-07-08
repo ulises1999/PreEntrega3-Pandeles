@@ -78,3 +78,26 @@
     }
   }
 }
+@media (max-width: 740px) {
+  #carouselExampleIndicators{
+    .carousel-inner{
+      .carousel-item{
+        div {
+          div{
+            .d-block{
+              max-width: 170px;
+              height: auto;
+            }
+          }
+          .logoSlider{
+            max-width: 115px;
+            height: auto;
+          }
+          .textoSlider{
+            display: none;
+          }
+        }
+      }
+    } 
+  }
+}

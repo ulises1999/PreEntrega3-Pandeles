@@ -7,7 +7,7 @@
       flex-direction: column;
       align-items: center;
     }
-    .bebida {
+    .mapas {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -17,6 +17,10 @@
   
       iframe {
         border-radius: 4%;
+      }
+      p{
+        color: white;
+        align-self: center;
       }
     }
   }
@@ -32,14 +36,4 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-  }
-
-  
-  .bebida {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px 10px 20px 10px;
-    justify-content: space-evenly;
-    gap: 15px;
   }

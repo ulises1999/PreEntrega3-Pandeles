@@ -40,15 +40,15 @@
         gap: 15px;
       
         p{
-          display: p;
-          overflow-y: scroll;
+          grid-area: p;
+          overflow-y: auto;
           scrollbar-color: $color-bg-secondary;
           height: 200px;
           margin: 0px;
           padding: 0px 15px;
         }
         img {
-          display: img;
+          grid-area: img;
           height: 200px;
           border-radius: 2%;
           border: solid 4px black;
