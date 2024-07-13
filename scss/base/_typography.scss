@@ -78,3 +78,22 @@
           }
     }
 }
+.dropdown-item {
+  background-color: $color-bg;
+  color: white;
+  &:hover{
+    background-color: $color-bg-secondary;
+  }
+}
+.dropdown-menu {
+  padding: 0;
+  border-radius: 1%;
+}
+.fondo{
+    .texto-home{
+      font-size: 40px;
+      color: white;
+      padding-left: 30px;
+      margin-bottom: auto;
+    }
+  }

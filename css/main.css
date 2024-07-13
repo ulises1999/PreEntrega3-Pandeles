@@ -68,6 +68,26 @@
   padding: 0px 15px;
 }
 
+.dropdown-item {
+  background-color: rgb(16, 68, 38);
+  color: white;
+}
+.dropdown-item:hover {
+  background-color: rgba(33, 128, 73, 0.712);
+}
+
+.dropdown-menu {
+  padding: 0;
+  border-radius: 1%;
+}
+
+.fondo .texto-home {
+  font-size: 40px;
+  color: white;
+  padding-left: 30px;
+  margin-bottom: auto;
+}
+
 body {
   height: 100dvh;
   width: auto;
@@ -401,6 +421,9 @@ main {
   margin-bottom: auto;
   font-size: 50px;
   color: white;
+}
+.fondo .kanji {
+  background-image: url(../assests/images/kanji-index.png);
 }
 
 #carouselExampleIndicators {
