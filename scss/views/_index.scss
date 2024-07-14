@@ -16,7 +16,7 @@
     color: white;
   }
   img{
-    height: 500px;
+    max-width: 350px;
     &:hover{
       transform: rotate(360deg);
       transition-duration: 1s;
