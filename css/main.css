@@ -81,6 +81,10 @@
   border-radius: 1%;
 }
 
+.mas-informacion {
+  color: white;
+}
+
 body {
   height: 100dvh;
   width: auto;
