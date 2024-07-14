@@ -81,13 +81,6 @@
   border-radius: 1%;
 }
 
-.fondo .texto-home {
-  font-size: 40px;
-  color: white;
-  padding-left: 30px;
-  margin-bottom: auto;
-}
-
 body {
   height: 100dvh;
   width: auto;
@@ -411,10 +404,10 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-around;
   align-content: center;
 }
 .fondo .animate__animated {
@@ -422,8 +415,12 @@ main {
   font-size: 50px;
   color: white;
 }
-.fondo .kanji {
-  background-image: url(../assests/images/kanji-index.png);
+.fondo img {
+  height: 500px;
+}
+.fondo img:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 #carouselExampleIndicators {

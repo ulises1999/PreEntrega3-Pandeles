@@ -4,10 +4,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-around;
   align-content: center;
 
   .animate__animated {
@@ -15,9 +15,14 @@
     font-size: 50px;
     color: white;
   }
-  .kanji{
-    background-image: url(../assests/images/kanji-index.png);
+  img{
+    height: 500px;
+    &:hover{
+      transform: rotate(360deg);
+      transition-duration: 1s;
+    }
   }
+
 }
 
 #carouselExampleIndicators {
