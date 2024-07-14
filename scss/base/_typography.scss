@@ -92,3 +92,9 @@
 .mas-informacion {
   color: white;
 }
+@media (max-width: 740px) {
+  h1{
+    align-self: center;
+    padding-left: auto;
+  }
+}
