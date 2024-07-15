@@ -111,6 +111,13 @@
     align-self: center;
     padding-left: auto;
   }
+  .texto-home {
+    max-width: 300px;
+    font-size: 20px;
+    text-shadow: none;
+    white-space: pre-line;
+    text-align: justify;
+  }
 }
 body {
   height: 100dvh;
