@@ -92,6 +92,27 @@
 .mas-informacion {
   color: white;
 }
+.nav-link{
+    color:white;
+}
+.fondo{
+  .animate__animated {
+    margin-bottom: auto;
+    font-family: Kanit;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px black;
+  }
+  .texto-home{
+    font-size:28px;
+    font-family: Kanit;
+    max-width: 600px;
+    margin-top: 20px;
+    text-shadow: none;
+    white-space: pre-line;
+    text-align: justify;
+  }
+}
 @media (max-width: 740px) {
   h1{
     align-self: center;
