@@ -12,6 +12,7 @@
 
   img{
     max-width: 350px;
+    align-self: self-start;
     &:hover{
       transform: rotate(360deg);
       transition-duration: 1s;

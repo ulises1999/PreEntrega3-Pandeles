@@ -92,31 +92,33 @@
 .fondo .animate__animated {
   margin-bottom: auto;
   font-family: Kanit;
-  font-size: 50px;
+  font-size: 100px;
   color: white;
   text-shadow: 5px 5px black;
+  text-align: center;
 }
 .fondo .texto-home {
   font-size: 28px;
   font-family: Kanit;
   max-width: 600px;
-  margin-top: 20px;
+  margin: 20px 0 0 30px;
   text-shadow: none;
   white-space: pre-line;
   text-align: justify;
+  align-self: self-start;
 }
 
 @media (max-width: 740px) {
   h1 {
-    align-self: center;
-    padding-left: auto;
+    text-align: center;
+    font-size: 60px !important;
   }
   .texto-home {
-    max-width: 300px;
     font-size: 20px;
     text-shadow: none;
     white-space: pre-line;
     text-align: justify;
+    margin: 0 20px;
   }
 }
 body {
@@ -450,6 +452,7 @@ main {
 }
 .fondo img {
   max-width: 350px;
+  align-self: self-start;
 }
 .fondo img:hover {
   transform: rotate(360deg);
