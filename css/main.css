@@ -101,23 +101,22 @@
   font-size: 28px;
   font-family: Kanit;
   max-width: 600px;
-  margin: 20px 0 0 30px;
+  margin: 20px 30px 0 30px;
   text-shadow: none;
   white-space: pre-line;
   text-align: justify;
-  align-self: self-start;
+  align-self: center;
 }
 
 @media (max-width: 740px) {
-  h1 {
+  .fondo .animate__animated {
     text-align: center;
-    font-size: 60px !important;
+    font-size: 60px;
   }
-  .texto-home {
+  .fondo .texto-home {
     font-size: 20px;
     text-shadow: none;
     white-space: pre-line;
-    text-align: justify;
     margin: 0 20px;
   }
 }
@@ -452,11 +451,17 @@ main {
 }
 .fondo img {
   max-width: 350px;
-  align-self: self-start;
+  align-self: center;
 }
 .fondo img:hover {
   transform: rotate(360deg);
   transition-duration: 1s;
+}
+.fondo .contenedor-texto-home {
+  background-color: rgba(0, 0, 0, 0.862);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 2%;
 }
 
 #carouselExampleIndicators {

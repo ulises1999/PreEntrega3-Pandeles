@@ -10,15 +10,22 @@
   justify-content: space-around;
   align-content: center;
 
+
   img{
     max-width: 350px;
-    align-self: self-start;
+    align-self: center;
+   
     &:hover{
       transform: rotate(360deg);
       transition-duration: 1s;
     }
   }
-
+  .contenedor-texto-home{
+    background-color: rgba(0, 0, 0, 0.862);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 2%;
+  }
 }
 
 #carouselExampleIndicators {

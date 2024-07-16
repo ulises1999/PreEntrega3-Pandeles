@@ -108,23 +108,24 @@
     font-size:28px;
     font-family: Kanit;
     max-width: 600px;
-    margin: 20px 0 0 30px;
+    margin: 20px 30px 0 30px;
     text-shadow: none;
     white-space: pre-line;
     text-align: justify;
-    align-self: self-start;
+    align-self: center;
   }
 }
 @media (max-width: 740px) {
-  h1{
-    text-align: center;
-    font-size: 60px !important;
-  }
-  .texto-home{
-    font-size: 20px;
-    text-shadow: none;
-    white-space: pre-line;
-    text-align: justify;
-    margin: 0 20px;
+  .fondo{
+    .animate__animated{
+      text-align: center;
+      font-size: 60px; 
+    }
+    .texto-home{
+      font-size: 20px;
+      text-shadow: none;
+      white-space: pre-line;
+      margin: 0 20px;
+    }
   }
 }
